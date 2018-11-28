@@ -1,0 +1,18 @@
+15:54:19 **** Build of configuration Nios II for project IOT_MQTT_bsp ****
+make all 
+Makefile not up to date.
+../../IOT.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+
+15:54:21 Build Finished (took 2s.63ms)
+

@@ -1,0 +1,24 @@
+22:35:09 **** Incremental Build of configuration Nios II for project p ****
+make all 
+Info: Building ../p_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../p_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../p_bsp//HAL/inc -I../p_bsp/ -I../p_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'espTCPSend':
+hello_world_small.c:157:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(net, "AT+CIPSEND=%d\r\n", size);
+  ^
+hello_world_small.c:157:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+hello_world_small.c:157:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Info: Linking p.elf
+nios2-elf-g++  -T'../p_bsp//linker.x' -msys-crt0='../p_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../p_bsp/  -msmallc  -Wl,-Map=p.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o p.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert p.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev esp --stdin_dev esp --stdout_dev esp --sopc_system_name IOT --quartus_project_dir "C:/Problema_2_VF" --jdi ../..//output_files/IOT.jdi --sopcinfo C:/Problema_2_VF/software/p_bsp/../../IOT.sopcinfo
+Info: (p.elf) 6784 Bytes program size (code + initialized data).
+Info:         892 Bytes free for stack + heap.
+Info: Creating p.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source p.elf >p.objdump
+[p build complete]
+
+22:35:12 Build Finished (took 3s.322ms)
+

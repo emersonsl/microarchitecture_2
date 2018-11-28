@@ -1,0 +1,140 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 272 360)
+	(text "IOT" (rect 126 -1 141 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 344 20 356)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "esp_rxd" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "esp_rxd" (rect 4 101 46 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "input_export[3..0]" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "input_export[3..0]" (rect 4 157 112 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 112 168)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(output)
+		(text "esp_txd" (rect 0 0 31 12)(font "Arial" (font_size 8)))
+		(text "esp_txd" (rect 4 117 46 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 112 128)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "lcd_ON" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "lcd_ON" (rect 4 213 40 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 112 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(output)
+		(text "lcd_BLON" (rect 0 0 42 12)(font "Arial" (font_size 8)))
+		(text "lcd_BLON" (rect 4 229 52 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 112 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(output)
+		(text "lcd_EN" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "lcd_EN" (rect 4 245 40 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 112 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "lcd_RS" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "lcd_RS" (rect 4 261 40 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 112 272)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "lcd_RW" (rect 0 0 35 12)(font "Arial" (font_size 8)))
+		(text "lcd_RW" (rect 4 277 40 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 112 288)(line_width 1))
+	)
+	(port
+		(pt 0 328)
+		(output)
+		(text "output_export[3..0]" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "output_export[3..0]" (rect 4 317 118 328)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 112 328)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(bidir)
+		(text "lcd_DATA[7..0]" (rect 0 0 66 12)(font "Arial" (font_size 8)))
+		(text "lcd_DATA[7..0]" (rect 4 197 88 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 112 208)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 97 43 212 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 252 144)(font "Arial" (color 0 0 0)))
+		(text "esp" (rect 92 83 202 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "rxd" (rect 117 107 252 224)(font "Arial" (color 0 0 0)))
+		(text "txd" (rect 117 123 252 256)(font "Arial" (color 0 0 0)))
+		(text "input" (rect 85 139 200 291)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 117 163 270 336)(font "Arial" (color 0 0 0)))
+		(text "lcd" (rect 97 179 212 371)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "DATA" (rect 117 203 258 416)(font "Arial" (color 0 0 0)))
+		(text "ON" (rect 117 219 246 448)(font "Arial" (color 0 0 0)))
+		(text "BLON" (rect 117 235 258 480)(font "Arial" (color 0 0 0)))
+		(text "EN" (rect 117 251 246 512)(font "Arial" (color 0 0 0)))
+		(text "RS" (rect 117 267 246 544)(font "Arial" (color 0 0 0)))
+		(text "RW" (rect 117 283 246 576)(font "Arial" (color 0 0 0)))
+		(text "output" (rect 77 299 190 611)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 117 323 270 656)(font "Arial" (color 0 0 0)))
+		(text " IOT " (rect 253 344 536 698)(font "Arial" ))
+		(line (pt 112 32)(pt 160 32)(line_width 1))
+		(line (pt 160 32)(pt 160 344)(line_width 1))
+		(line (pt 112 344)(pt 160 344)(line_width 1))
+		(line (pt 112 32)(pt 112 344)(line_width 1))
+		(line (pt 113 52)(pt 113 76)(line_width 1))
+		(line (pt 114 52)(pt 114 76)(line_width 1))
+		(line (pt 113 92)(pt 113 132)(line_width 1))
+		(line (pt 114 92)(pt 114 132)(line_width 1))
+		(line (pt 113 148)(pt 113 172)(line_width 1))
+		(line (pt 114 148)(pt 114 172)(line_width 1))
+		(line (pt 113 188)(pt 113 292)(line_width 1))
+		(line (pt 114 188)(pt 114 292)(line_width 1))
+		(line (pt 113 308)(pt 113 332)(line_width 1))
+		(line (pt 114 308)(pt 114 332)(line_width 1))
+		(line (pt 0 0)(pt 272 0)(line_width 1))
+		(line (pt 272 0)(pt 272 360)(line_width 1))
+		(line (pt 0 360)(pt 272 360)(line_width 1))
+		(line (pt 0 0)(pt 0 360)(line_width 1))
+	)
+)

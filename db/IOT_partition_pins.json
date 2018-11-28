@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "esp_txd",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_ON",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_BLON",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_EN",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_RS",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_RW",
+					"strict" : false
+				},
+				{
+					"name" : "output_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "input_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "esp_rxd",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
